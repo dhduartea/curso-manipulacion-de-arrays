@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- saved from url=(0145)https://static.platzi.com/media/tmp/class-files/github/curso-manipulacion-de-arrays/curso-manipulacion-de-arrays-4-map-reloded/client/02-map.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async="" src="./02-map_files/api.js.descarga"></script>
+</head>
+
+<body>
+    <div id="app">
+    </div>
+    <script>
+        const products = [
+            { title: 'Burger', price: 121 },
+            { title: 'Pizza', price: 20 },
+        ];
+        const app = document.getElementById('app');
+        const lis = products.map(product => {
+            return `<li>${product.title} - ${product.price}</li>`;
+        })
+        app.innerHTML = lis.join('');
+    </script>
+    
+</body>
+
+</html>
